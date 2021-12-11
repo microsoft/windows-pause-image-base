@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\rpc]
+"DCOM Protocols"=hex(7):00,00
+"UuidSequenceNumber"=dword:01bcf674
+"EpMapDisallowedProtocols"="ncacn_ip_tcp"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ole]
+"EnableDCOM"="N"
