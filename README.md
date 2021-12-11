@@ -1,14 +1,24 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Serves as the base image for the Windows pause image on Kubernetes (https://github.com/kubernetes/kubernetes). 
 
-As the maintainer of this project, please make a few updates:
+![image](https://user-images.githubusercontent.com/30281766/145636076-9cd59325-7503-4858-b359-1244bd78eb99.png)
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+**Diagram**: The change creates an intermediate layer between NanoServer and the Pause Image. 
+
+## Why create an intermediate layer?
+
+An intermediate layer is needed between NanoServer and the pause image to support DCOM scenarios in Kubernetes. The pause image was found to be hijacking the RPC port (port 135) for its entire pod. The Pause Base Image modifies a set of registry keys preventing other containers in the pod from using RPC. The dockerfile containing these modifying instructions can be found in this repo. 
+> Additionally, having a dedicated pause base image (built on Windows) will allow for more effective solutions regarding the composition of the pause image.  
+
+### Modified Registry Keys 
+#### HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\rpc
+- "DCOM Protocols"=hex(7):00,00
+- "UuidSequenceNumber"=dword:01bcf674
+- "EpMapDisallowedProtocols"="ncacn_ip_tcp"
+
+#### HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ole
+- "EnableDCOM"="N"
 
 ## Contributing
 
