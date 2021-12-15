@@ -1,6 +1,6 @@
 # Project
 
-Serves as the base image for the Windows pause image on Kubernetes (https://github.com/kubernetes/kubernetes). 
+Serves as the base image for the Windows [pause image](https://github.com/kubernetes/kubernetes/tree/master/build/pause) on Kubernetes (https://github.com/kubernetes/kubernetes). 
 
 ![image](https://user-images.githubusercontent.com/30281766/145636076-9cd59325-7503-4858-b359-1244bd78eb99.png)
 
