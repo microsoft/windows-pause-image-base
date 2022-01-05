@@ -34,6 +34,10 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+## Licensing
+
+This project is licensed under the [MIT license]( https://github.com/microsoft/windows-pause-image-base/blob/main/LICENSE). However, please be aware that it is based on a Windows container base image which is subject to a separate license located in the license file in the image or at: [MICROSOFT SOFTWARE SUPPLEMENTAL LICENSE FOR WINDOWS CONTAINER BASE IMAGE](https://docs.microsoft.com/en-us/virtualization/windowscontainers/images-eula).
+
 ## Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
