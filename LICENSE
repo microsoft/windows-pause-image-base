@@ -20,5 +20,7 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE
     
-    Please be aware that it is based on a Windows container base image which is subject to a separate license located in the license file in the image or at: [MICROSOFT SOFTWARE SUPPLEMENTAL LICENSE FOR WINDOWS CONTAINER BASE IMAGE](https://docs.microsoft.com/en-us/virtualization/windowscontainers/images-eula).
+    Please be aware that it is based on a Windows container base image
+    which is subject to a separate license located in the license file in the image or at: 
+    [MICROSOFT SOFTWARE SUPPLEMENTAL LICENSE FOR WINDOWS CONTAINER BASE IMAGE](https://docs.microsoft.com/en-us/virtualization/windowscontainers/images-eula).
 
